@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+  <title>NoMe Test</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="nome-0.1.9.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      nome.ready(function() {
+        lng = nome.getLongitude();
+        lat = nome.getLatitude();
+        $('#userLng').html( "Lng: " + lng );
+        $('#userLat').html( "Lat: " + lat );
+      });
+    });
+  </script>
+
+</head>
+
+<body>
+
+  <div id="userLng">1000</div>
+  <div id="userLat">1000</div>
+
+</body>
+
